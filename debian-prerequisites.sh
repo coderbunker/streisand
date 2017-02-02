@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# this script installs the prerequisites for Streisans on a debian/ubuntu Linux system
-# as they are listed in the README
-# it does not (yet) take care of the perequisites required depending on the remote cloud provider
-# neither the creation of an ssh key
+# this script installs the prerequisites for Streisand as they are listed in the README on debian based Linux systems
+# it does not (yet) take care of the perequisites required depending on the remote cloud provider neither the 
+# creation of an ssh key
 
 sudo apt-get update
 
@@ -18,3 +17,5 @@ sudo apt-get install python-paramiko python-pip python-pycurl python-dev build-e
 
 echo 'Installing Ansible'
 sudo pip install ansible markupsafe
+
+exit
